@@ -1,0 +1,28 @@
+
+    page 893
+
+    page 939:
+        The library is publicly available from http://www.tcpdump.org/.
+        
+
+[meng@localhost build]$ make
+Scanning dependencies of target cping
+[  7%] Building C object CMakeFiles/cping.dir/send_v4.c.o
+In file included from /home/meng/meng/src/unix_network/ping/ping.h:4:0,
+                 from /home/meng/meng/src/unix_network/ping/send_v4.c:1:
+                 /usr/include/unistd.h: In function ‘Calloc’:
+                 /usr/include/unistd.h:255:22: error: storage class specified for parameter ‘useconds_t’
+                  typedef __useconds_t useconds_t;
+                                        ^
+                                        /usr/include/unistd.h:287:12: error: storage class specified for parameter ‘access’
+                                         extern int access (const char *__name, int __type) __THROW __nonnull ((1));
+                                                     ^
+                                                     /usr/include/unistd.h:304:12: error: storage class specified for parameter ‘faccessat’
+                                                      extern int faccessat (int __fd, const char *__file, int __type, int __flag)
+                                                                  ^
+                                                                  /usr/include/unistd.h:334:16: error: storage class specified for parameter ‘lseek’
+                                                                   extern __off_t lseek (int __fd, __off_t __offset, int __whence) __THROW;
+                                                                                   ^
+                                                                                   /usr/include/unistd.h:353:12: error: storage class specified for parameter ‘close’
+                                                                                    extern int close (int __fd);
+
