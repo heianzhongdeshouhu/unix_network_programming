@@ -10,8 +10,13 @@ public abstract class Employee {
         this.number     = number;
     }
 
+    public double computePay() {
+        System.out.println("Inside Employee computePay");
+        return 0.0;
+    }
+    
     public void mailCheck() {
-        System.out.println("post the check to: " + this.name + " " + this.address);
+        System.out.println("Mailing a check to: " + this.name + " " + this.address);
     }
 
     public String toString() {
