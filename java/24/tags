@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Animal	Test.java	/^abstract class Animal {$/;"	c
+Cat	Test.java	/^class Cat extends Animal {$/;"	c
+Dog	Test.java	/^class Dog extends Animal {$/;"	c
+Employee	Employee.java	/^    public Employee(String name, String address, int number) {$/;"	m	class:Employee
+Employee	Employee.java	/^public class Employee {$/;"	c
+Salary	Salary.java	/^    public Salary(String name, String address, int number, double salary) {$/;"	m	class:Salary
+Salary	Salary.java	/^public class Salary extends Employee {$/;"	c
+Test	Test.java	/^public class Test {$/;"	c
+VirtualDemo	VirtualDemo.java	/^public class VirtualDemo {$/;"	c
+address	Employee.java	/^    private String address;$/;"	f	class:Employee	file:
+computerPay	Salary.java	/^    public double computerPay() {$/;"	m	class:Salary
+eat	Test.java	/^    abstract void eat();$/;"	m	class:Animal
+eat	Test.java	/^    public void eat() {$/;"	m	class:Cat
+eat	Test.java	/^    public void eat() {$/;"	m	class:Dog
+getAddress	Employee.java	/^    public String getAddress() {$/;"	m	class:Employee
+getName	Employee.java	/^    public String getName() {$/;"	m	class:Employee
+getNumber	Employee.java	/^    public int getNumber() {$/;"	m	class:Employee
+getSalary	Salary.java	/^    public double getSalary() {$/;"	m	class:Salary
+mailCheck	Employee.java	/^    public void mailCheck() {$/;"	m	class:Employee
+mailCheck	Salary.java	/^    public void mailCheck() {$/;"	m	class:Salary
+main	Test.java	/^    public static void main(String[] args) {$/;"	m	class:Test
+main	VirtualDemo.java	/^    public static void main(String[] args) {$/;"	m	class:VirtualDemo
+name	Employee.java	/^    private String name;$/;"	f	class:Employee	file:
+number	Employee.java	/^    private int number;$/;"	f	class:Employee	file:
+salary	Salary.java	/^    private double salary;$/;"	f	class:Salary	file:
+setAddress	Employee.java	/^    public void setAddress(String newAddress) {$/;"	m	class:Employee
+setSalary	Salary.java	/^    public void setSalary(double newSalary) {$/;"	m	class:Salary
+show	Test.java	/^    public static void show(Animal a) {$/;"	m	class:Test
+toString	Employee.java	/^    public String toString() {$/;"	m	class:Employee
+work	Test.java	/^    public void work() {$/;"	m	class:Cat
+work	Test.java	/^    public void work() {$/;"	m	class:Dog

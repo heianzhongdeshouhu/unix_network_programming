@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BankDemo	BankDemo.java	/^public class BankDemo {$/;"	c
+CheckingAccount	CheckingAccount.java	/^    public CheckingAccount(int number) {$/;"	m	class:CheckingAccount
+CheckingAccount	CheckingAccount.java	/^public class CheckingAccount {$/;"	c
+ExceptTest	ExceptTest.java	/^public class ExceptTest {$/;"	c
+InsufficientFundsException	InsufficientFundsException.java	/^    public InsufficientFundsException(double amount) {$/;"	m	class:InsufficientFundsException
+InsufficientFundsException	InsufficientFundsException.java	/^public class InsufficientFundsException extends Exception {$/;"	c
+amount	InsufficientFundsException.java	/^    private double amount;$/;"	f	class:InsufficientFundsException	file:
+balance	CheckingAccount.java	/^    private double balance;$/;"	f	class:CheckingAccount	file:
+deposit	CheckingAccount.java	/^    public void deposit(double amount) {$/;"	m	class:CheckingAccount
+getAmount	InsufficientFundsException.java	/^    public double getAmount() {$/;"	m	class:InsufficientFundsException
+getBalance	CheckingAccount.java	/^    public double getBalance() {$/;"	m	class:CheckingAccount
+getNumber	CheckingAccount.java	/^    public int getNumber() {$/;"	m	class:CheckingAccount
+main	BankDemo.java	/^    public static void main(String[] args) {$/;"	m	class:BankDemo
+main	ExceptTest.java	/^    public static void main(String[] args) {$/;"	m	class:ExceptTest
+number	CheckingAccount.java	/^    private int number;$/;"	f	class:CheckingAccount	file:
+withdraw	CheckingAccount.java	/^    public void withdraw(double amount) throws InsufficientFundsException {$/;"	m	class:CheckingAccount
