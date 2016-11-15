@@ -1,0 +1,15 @@
+page 75
+    download the document from the web
+
+Nov 13th
+    serverlet
+6:50 - 22:00
+    java environment setup.
+    step by step according to the web.
+
+Java 教程 - Java 基础语法
+http://docs.oracle.com/javase/tutorial/getStarted/cupojava/unix.html
+
+Nov 15th
+22:00 - 23:29
+    Java Number 类
