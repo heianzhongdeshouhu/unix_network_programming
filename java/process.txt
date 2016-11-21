@@ -1,3 +1,8 @@
+mybatis
+spring mvc
+servlet
+tomcat
+
 page 75
     download the document from the web
 
@@ -17,3 +22,51 @@ Nov 14th
 Nov 15th
 21:10 - 23:20
     Java 抽象类 - Java 包(package)
+
+Nov 17th
+21:40 - 22:30
+    Java 网络编程 - Java 多线程编程 
+
+Nov 19th
+[meng@bogon spring_mvc]$ find ./ -name 'hello'
+./gs-serving-web-content/initial/src/main/java/hello
+./gs-serving-web-content/complete/src/test/java/hello
+./gs-serving-web-content/complete/src/main/java/hello
+[meng@bogon spring_mvc]$ 
+
+
+Nov 19th
+9:20 - 9:40
+    spring-mvc demo test completed.
+
+    Build with Gradle
+
+    Build with Maven
+
+
+    [root@bogon java]# find / -name 'gradlew'
+    find: ‘/run/user/1000/gvfs’: Permission denied
+    /home/meng/meng/src/github/unix_network_programming/java/spring_mvc/gs-serving-web-content/initial/gradlew
+    /home/meng/meng/src/github/unix_network_programming/java/spring_mvc/gs-serving-web-content/complete/gradlew
+    [root@bogon java]# 
+
+
+    21:00 - 23:00
+    0. lear how to use gradle
+    1. ./gradlew build
+        
+
+
+        22:36
+        [meng@bogon libs]$ java -jar ./hello.jar 
+        no main manifest attribute, in ./hello.jar
+        [meng@bogon libs]$ 
+            
+            http://blog.jobbole.com/72558/
+            http://stackoverflow.com/questions/26337100/no-main-manifest-attribute
+            http://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute
+
+
+        [meng@bogon libs]$ java -jar gradle.jar 
+        Error: Could not find or load main class net.petrikainulainen.gradle.HelloWorld
+        [meng@bogon libs]$ 
