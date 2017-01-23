@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+__black	red_black_tree.h	/^    __black,$/;"	e	enum:red_black_tree_color
+__red	red_black_tree.h	/^    __red$/;"	e	enum:red_black_tree_color
+color	red_black_tree.h	/^    rbt_color color;$/;"	m	struct:red_black_tree_node
+ival	red_black_tree.h	/^    int ival;$/;"	m	struct:red_black_tree_node
+left_rotate	red_black_tree.c	/^int left_rotate(rbt_node **pproot, rbt_node *px, rbt_node *pnil) {$/;"	f
+main	test.c	/^int main(int argc, char *argv[]) {$/;"	f
+pleft	red_black_tree.h	/^    struct red_black_tree_node *pleft;$/;"	m	struct:red_black_tree_node	typeref:struct:red_black_tree_node::red_black_tree_node
+pnil	red_black_tree.h	/^    struct red_black_tree_node *pnil;$/;"	m	struct:red_black_tree_head_info	typeref:struct:red_black_tree_head_info::red_black_tree_node
+pparent	red_black_tree.h	/^    struct red_black_tree_node *pparent;$/;"	m	struct:red_black_tree_node	typeref:struct:red_black_tree_node::red_black_tree_node
+prbt_info	red_black_tree.h	/^} rbt_info, *prbt_info;$/;"	t	typeref:struct:red_black_tree_head_info
+prbt_node	red_black_tree.h	/^} rbt_node, *prbt_node;$/;"	t	typeref:struct:red_black_tree_node
+pright	red_black_tree.h	/^    struct red_black_tree_node *pright;$/;"	m	struct:red_black_tree_node	typeref:struct:red_black_tree_node::red_black_tree_node
+proot	red_black_tree.h	/^    struct rbt_node *proot;$/;"	m	struct:red_black_tree_head_info	typeref:struct:red_black_tree_head_info::rbt_node
+rb_init	red_black_tree.c	/^int rb_init(rbt_info *prbt_info) {$/;"	f
+rb_inorder_tree_walk	red_black_tree.c	/^int rb_inorder_tree_walk(rbt_info *prbt_info) {$/;"	f
+rb_inorder_tree_walk_proc	red_black_tree.c	/^int rb_inorder_tree_walk_proc(rbt_node *proot, rbt_node *pnil) {$/;"	f
+rb_insert	red_black_tree.c	/^int rb_insert(rbt_info *prbt_info, int ival) {$/;"	f
+rb_insert_fixup	red_black_tree.c	/^int rb_insert_fixup(rbt_node **pproot, rbt_node *pz, rbt_node *pnil) {$/;"	f
+rbt_color	red_black_tree.h	/^} rbt_color;$/;"	t	typeref:enum:red_black_tree_color
+rbt_info	red_black_tree.h	/^} rbt_info, *prbt_info;$/;"	t	typeref:struct:red_black_tree_head_info
+rbt_node	red_black_tree.h	/^} rbt_node, *prbt_node;$/;"	t	typeref:struct:red_black_tree_node
+red_black_tree_color	red_black_tree.h	/^typedef enum red_black_tree_color {$/;"	g
+red_black_tree_head_info	red_black_tree.h	/^typedef struct red_black_tree_head_info {$/;"	s
+red_black_tree_node	red_black_tree.h	/^typedef struct red_black_tree_node {$/;"	s
+right_rotate	red_black_tree.c	/^int right_rotate(rbt_node **pproot, rbt_node *py, rbt_node *pnil) {$/;"	f

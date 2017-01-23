@@ -1,0 +1,8 @@
+page 145:
+Unfortunately, in the
+UNIX environment, flush means two different things. In terms of the standard
+I/O library, it means writing out the contents of a buffer, which may be partially
+filled. In terms of the terminal driver, such as the tcflush function in
+Chapter 18, it means to discard the data that’s already stored in a buffer.
+
+
