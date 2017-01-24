@@ -22,3 +22,11 @@ counting_sort
 todo:
     chapter 9
 
+0. recursive method is a effective method to show your attention clearly.
+1. solve the problem in locally.
+2. the thought of global view.
+3. abstract thought. (
+    before doing anything, tell yourself what you want to do, then you would find the solution.)
+4. interface programming.
+
+
