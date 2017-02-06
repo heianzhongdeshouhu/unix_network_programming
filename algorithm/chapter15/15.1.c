@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <assert.h>
 
+//#define __cut_rod
+
 #define LEN 1024
 
 int max(int ival_0, int ival_1) {
@@ -12,7 +14,7 @@ int max(int ival_0, int ival_1) {
     }
 }
 
-/*
+#ifdef __cut_rod
 int cut_rod(int *p, int n) {
     if (0 == n) {
         return 0;
@@ -24,7 +26,7 @@ int cut_rod(int *p, int n) {
 
     return q;
 }
-*/
+#endif
 
 int memorized_cut_rod(int *ptariff, int n, int *poptimal) {
     assert(ptariff && poptimal);
@@ -38,10 +40,10 @@ int memorized_cut_rod(int *ptariff, int n, int *poptimal) {
 
     int q = -1;
     for (int i = 0 + 1; i <= n; i++) {
-        q = max(q, ptariff[i] + memorized_cut_rod(ptariff, n - 1, poptimal));
+        q = max(q, ptariff[i] + memorized_cut_rod(ptariff, n - i, poptimal));
     }
     poptimal[n] = q;
-    printf("n = %d, poptimal[n] = %d ^_^\n", n, poptimal[n]);
+    printf("poptimal[%d] = %d\n", n, poptimal[n]);
 
     return poptimal[n];
 }
@@ -49,15 +51,18 @@ int memorized_cut_rod(int *ptariff, int n, int *poptimal) {
 int main() {
     int itariff[] = {0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
 
-    int n = 4;
-    //int irevenue = cut_rod(iprice, n);
+    int n = 10;
 
+#ifdef __cut_rod
+    int irevenue = cut_rod(itariff, n);
+#else
     int ioptimal[LEN] = {0};
     for (int i = 0; i < LEN; i++) {
         ioptimal[i] = -1;
     }
 
     int irevenue = memorized_cut_rod(itariff, n, ioptimal);
+#endif
     printf("n = %d, reverse = %d\n", n, irevenue);
 
     exit(0);
