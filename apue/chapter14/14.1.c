@@ -3,6 +3,8 @@
  */
 
 #include "apue.h"
+#include <errno.h>
+#include <fcntl.h>
 
 char buf[500000];
 
