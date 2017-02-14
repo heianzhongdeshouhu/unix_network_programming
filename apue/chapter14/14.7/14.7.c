@@ -3,6 +3,7 @@
  *  page 491
  */
 #include "apue.h"
+#include <fcntl.h>
 
 static void
 lockabyte(const char *name, int fd, off_t offset) {
@@ -20,8 +21,8 @@ main(int argc, char *argv[]) {
     /*
      * Create a file and write two bytes to it.
      */
-    if ((fd = create("templock", FILE_MODE)) < 0) {
-        err_sys("create error");
+    if ((fd = creat("templock", FILE_MODE)) < 0) {
+        err_sys("creat error");
     }
     if (write(fd, "ab", 2) != 2) {
         err_sys("write error");

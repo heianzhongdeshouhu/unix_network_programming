@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.6)
 
 
 ####
@@ -17,10 +17,10 @@ cmake_minimum_required(VERSION 2.6)
 ####
 project(14.7)
 
-include_directories(../common/include)
+include_directories(../../common/include)
 
-aux_source_directory(./14.7.c SRC_LIST)
-aux_source_directory(../common/fileio SRC_LIST)
-aux_source_directory(../common/lib SRC_LIST)
+aux_source_directory(. SRC_LIST)
+aux_source_directory(../../common/fileio SRC_LIST)
+aux_source_directory(../../common/lib SRC_LIST)
 
 add_executable(deadlock ${SRC_LIST})
