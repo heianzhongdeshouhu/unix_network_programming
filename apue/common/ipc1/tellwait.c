@@ -31,8 +31,21 @@ WAIT_PARENT(void) {
 }
 
 void
-TELL_CHILD
+TELL_CHILD(pid_t pid) {
+    if (1 != write(pfd1[1], "p", 1)) {
+        err_sys("write error");
+    }
+}
 
+void
+WAIT_CHILD(void) {
+    char    c;
 
+    if (1 != read(pfd2[0], &c, 1)) {
+        err_sys("read error");
+    }
 
-WAIT_CHILD()
+    if ('c' != c) {
+        err_quit("WAIT_CHILD: incorrect data");
+    }
+}
