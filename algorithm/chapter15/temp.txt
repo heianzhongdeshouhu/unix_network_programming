@@ -1,0 +1,5 @@
+X = {A, B, C, B, D, A, B}
+Y = {B, D, C, A, B, A}
+
+    {B, C, B, A}
+    {B, D, A, B}
