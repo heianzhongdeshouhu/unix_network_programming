@@ -1,3 +1,7 @@
+/*
+ * please refer to the code in page 551.
+ */
+
 #include "apue.h"
 
 int
