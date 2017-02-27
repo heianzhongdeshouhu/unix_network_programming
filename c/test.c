@@ -1,21 +1,54 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
+#include <string.h>
 
-int format_time(char *ptime, char *pformatted) {
-    time_t rawtime = 1479917095;
-           struct tm * timeinfo;
-                      char buffer [128];
+//char *returnStr()
+//{
+//    char *p = "hello world";
+//    return p;
+//}
 
-                                  timeinfo = localtime (&rawtime);
+//char *returnStr()
+//{
+//    char p[] = "hello world";
+//    return p;
+//}
 
-                                              strftime (buffer,sizeof(buffer),"Now is %Y/%m/%d %H:%M:%S",timeinfo);
+//char *returnStr()
+//{
+//    static char p[] = "hello world";
+//    return p;
+//}
+
+//char *GetMemory3(int num) {
+//    char *p = (char *)malloc(sizeof(char) *num);
+//
+//    return p;
+//}
+
+char *Cstr(void) {
+
+    char a[10] = "like";
+    return a;
 }
 
 int main(int argc, char *argv[]) {
-    char time_formatted[1024];
-    format_time("1479917095", time_formatted);
-           puts (buffer);
+
+    //char *str;
+    //str = returnStr();
+    //printf("%s\n", str);
+
+    //char *str = NULL;
+    //str = GetMemory3(100);
+    //strcpy(str, "hello");
+    //printf("%s\n", str);
+
+    //free(str);
+
+    
+    // ----
+    char *a = Cstr();
+    printf("%c\n", *(a + 1));
 
     exit(0);
 }

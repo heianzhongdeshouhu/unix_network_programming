@@ -21,11 +21,25 @@
  */
 #define FILE_MODE (S_IRUSR| S_IWUSR| S_IRGRP| S_IROTH)
 
+/*
+ * Default permissions for new directories.
+ */
+
+/*
+ * Prototypes for our own functions.
+ */
+
+int set_cloexec(int);       /* {Prog setfd} */
+
 void
 set_fl(int fd, int flags);
 
 void
 clr_fl(int fd, int flags);
+
+
+void    daemonize(const char *);            /* {Prog daemoninit} */
+
 
 void    err_sys(const char *, ...) __attribute__((noreturn));
 

@@ -1,15 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-//    printf("hello, world ^_^\n");
-    printf("hello, world ^_^\c");
-    
-    /*
-    printf("hello, ");
-    printf("world");
-    printf("\n");
-    */
+void f(char **p) {
+    printf("sizeof(*p) = %u\n", sizeof(*p));
+
+    *p += 2;
+}
+
+int main(int argc, char *argv[]) {
+    char *a[] = {"123", "abc", "456"}, **p;
+    p = a;
+    f(p);
+    printf("%s\n", *p);
 
     exit(0);
 }

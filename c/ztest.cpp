@@ -1,32 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include <iostream>
-#include <sstream>
-#include <string>
+#include <stdio.h>
+#include <stddef.h>
 
-using namespace std;
+struct s1 {
+    char ch;
+    int a;
+    double b;
+    char c1;
+};
 
-int format_time(const char *ptime, char *pformatted, size_t len_pformatted) {
-    string result=ptime;
-    stringstream stream;
-    time_t rawtime = 0;
-    stream<<result;
-    stream>>rawtime;//n等于10000
-
-    struct tm * timeinfo;
-
-    timeinfo = localtime (&rawtime);
-
-    strftime (pformatted, len_pformatted,"%Y-%02m-%02d %02H:%02M:%02S",timeinfo);
-}
-
+struct s2 {
+    char ch;
+    int a;
+    double b;
+};
 int main(int argc, char *argv[]) {
-    char time_formatted[1024];
-    const char *ptemp = "1479917095";
-    format_time(ptemp, time_formatted, 1024);
+    printf("sizeof(double) = %u\n", sizeof(double));
+    printf("sizeof(s1) = %u\n", sizeof(struct s1));
+    printf("offsetof(s1.ch) = %u\n", offsetof(s1, ch));
+    printf("offsetof(s1.a) = %u\n", offsetof(s1, a));
+    printf("offsetof(s1.b) = %u\n", offsetof(s1, b));
+    printf("offsetof(s1.c1) = %u\n", offsetof(s1, c1));
 
-    puts (time_formatted);
-
+    printf("============================\n");
+    printf("sizeof(s2) = %u\n", sizeof(struct s2));
+    printf("offsetof(s2.ch) = %u\n", offsetof(s2, ch));
+    printf("offsetof(s2.a) = %u\n", offsetof(s2, a));
+    printf("offsetof(s2.b) = %u\n", offsetof(s2, b));
     exit(0);
 }
