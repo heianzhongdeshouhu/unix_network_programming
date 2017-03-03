@@ -40,7 +40,11 @@ clr_fl(int fd, int flags);
 
 void    daemonize(const char *);            /* {Prog daemoninit} */
 
+int     fd_pipe(int *);                     /* {Prog sock_fdpipe} */
 
+int     send_err(int, int, const char *);   /* {Prog senderr} */
+
+void    err_ret(const char *, ...);
 void    err_sys(const char *, ...) __attribute__((noreturn));
 
 
