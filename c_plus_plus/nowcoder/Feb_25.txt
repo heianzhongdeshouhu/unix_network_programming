@@ -1,0 +1,10 @@
+1.
+    Base
+    Derived
+2, 
+    temp = 11
+    multi(&temp, &10, &a);
+    21
+5.
+    1     4
+    1
