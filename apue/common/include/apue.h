@@ -48,6 +48,7 @@ void    err_ret(const char *, ...);
 void    err_sys(const char *, ...) __attribute__((noreturn));
 
 
+ssize_t writen(int, const void *, size_t);      /* {Prog readn_writen} */
 
 int lock_reg(int, int, int, off_t, int, off_t); /* {Prog lockreg} */
 
