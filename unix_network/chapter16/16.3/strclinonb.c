@@ -38,7 +38,7 @@ str_cli(FILE *fp, int sockfd) {
             FD_SET(STDOUT_FILENO, &wset);       /* data to write to stdout */
         }
 
-        Select(maxfdp1, &rset, &write, NULL, NULL);
+        Select(maxfdp1, &rset, &wset, NULL, NULL);
 
         if (FD_ISSET(STDIN_FILENO, &rset)) {
             if ( (n = read(STDIN_FILENO, toiptr, &to[MAXLINE] - toiptr)) < 0) {
@@ -77,7 +77,7 @@ str_cli(FILE *fp, int sockfd) {
             }
         }
 
-        if (FD_SET(STDOUT_FILENO, &wset) && ( (n = friptr - froptr) > 0)) {
+        if (FD_ISSET(STDOUT_FILENO, &wset) && ( (n = friptr - froptr) > 0)) {
             if ( (nwritten = write(STDOUT_FILENO, froptr, n)) < 0) {
                 if (EWOULDBLOCK != errno) {
                     err_sys("write error to stdout");
@@ -91,7 +91,7 @@ str_cli(FILE *fp, int sockfd) {
             }
         }
 
-        if (FD_SET(sockfd, &wset) && ( (n = toiptr - tooptr) > 0)) {
+        if (FD_ISSET(sockfd, &wset) && ( (n = toiptr - tooptr) > 0)) {
             if ( (nwritten = write(sockfd, tooptr, n)) < 0) {
                 if (EWOULDBLOCK != errno) {
                     err_sys("write error to socket");

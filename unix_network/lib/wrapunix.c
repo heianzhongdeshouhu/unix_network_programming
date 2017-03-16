@@ -7,6 +7,17 @@ Close(int fd) {
     }
 }
 
+int
+Fcntl(int fd, int cmd, int arg) {
+    int n;
+
+    if (-1 == (n = fcntl(fd, cmd, arg))) {
+        err_sys("fcntl error");
+    }
+
+    return (n);
+}
+
 ssize_t
 Read(int fd, void *ptr, size_t nbytes) {
     ssize_t     n;

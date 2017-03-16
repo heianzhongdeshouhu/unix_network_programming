@@ -5,6 +5,8 @@
 #include <arpa/inet.h>
 #include <string.h>
 
+#include <fcntl.h>  /* for nonblocking */
+
 #include <unistd.h>
 #include <stdarg.h>
 
@@ -12,6 +14,8 @@
 #include <errno.h>
 
 #include <poll.h>
+
+#include <sys/time.h>   /* timeval{} for select() */
 
 /*
  * Posix.1g requires that an #include of <poll.h> DefinE INFTIM, but many
@@ -64,3 +68,15 @@ ssize_t Read(int, void *, size_t);
 void Write(int, void *, size_t);
 
 void Close(int);
+
+
+
+
+/* prototypes for our own library functions */
+char * gf_time(void); 
+
+/* prototypes for our own Unix wrapper functions: see (Sec errors) */
+int Fcntl(int, int, int);
+
+/* prototypes for our own socket wrapper functions: see {Sec errors} */
+void Shutdown(int, int);

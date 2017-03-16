@@ -79,3 +79,10 @@ Poll(struct pollfd *fdarray, unsigned long nfds, int timeout) {
     return(n);
 }
 //#endif
+
+void
+Shutdown(int fd, int how) {
+    if (shutdown(fd, how) < 0) {
+        err_sys("shutdown error");
+    }
+}
