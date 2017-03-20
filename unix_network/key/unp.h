@@ -74,9 +74,18 @@ void Close(int);
 
 /* prototypes for our own library functions */
 char * gf_time(void); 
+void    str_echo(int);
 
 /* prototypes for our own Unix wrapper functions: see (Sec errors) */
 int Fcntl(int, int, int);
+pid_t Fork(void);
+
+/* prototypes for our stdio wrapper functions: see {Sec errors} */
+char    *Fgets(char *, int, FILE *);
+void Fputs(const char *, FILE *);
 
 /* prototypes for our own socket wrapper functions: see {Sec errors} */
 void Shutdown(int, int);
+void Writen(int , void *, size_t );
+
+ssize_t Readline(int , void *, size_t );
