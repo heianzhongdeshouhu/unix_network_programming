@@ -24,7 +24,7 @@ main(int argc, char *argv[]) {
         err_sys("can't open %s for reading", argv[1]);
     }
 
-    if ((fdout = open(argv[1], O_RDWR| O_CREAT| O_TRUNC, FILE_MODE)) < 0) {
+    if ((fdout = open(argv[2], O_RDWR| O_CREAT| O_TRUNC, FILE_MODE)) < 0) {
         err_sys("can't creat %s for writing", argv[2]);
     }
  
