@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hook_ShowWindow", "hook_ShowWindow\hook_ShowWindow.vcproj", "{65F3C4D0-7599-4DE8-A789-C627E63324EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hook_ShowWindowTest", "hook_ShowWindowTest\hook_ShowWindowTest.vcproj", "{102F0B4C-A884-41A9-BA9C-8A73BAB18E66}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sdi", "sdi\sdi.vcproj", "{9D65248B-59BD-4C0E-B75F-A9F596FBF0D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65F3C4D0-7599-4DE8-A789-C627E63324EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65F3C4D0-7599-4DE8-A789-C627E63324EF}.Debug|Win32.Build.0 = Debug|Win32
+		{65F3C4D0-7599-4DE8-A789-C627E63324EF}.Release|Win32.ActiveCfg = Release|Win32
+		{65F3C4D0-7599-4DE8-A789-C627E63324EF}.Release|Win32.Build.0 = Release|Win32
+		{102F0B4C-A884-41A9-BA9C-8A73BAB18E66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{102F0B4C-A884-41A9-BA9C-8A73BAB18E66}.Debug|Win32.Build.0 = Debug|Win32
+		{102F0B4C-A884-41A9-BA9C-8A73BAB18E66}.Release|Win32.ActiveCfg = Release|Win32
+		{102F0B4C-A884-41A9-BA9C-8A73BAB18E66}.Release|Win32.Build.0 = Release|Win32
+		{9D65248B-59BD-4C0E-B75F-A9F596FBF0D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D65248B-59BD-4C0E-B75F-A9F596FBF0D6}.Debug|Win32.Build.0 = Debug|Win32
+		{9D65248B-59BD-4C0E-B75F-A9F596FBF0D6}.Release|Win32.ActiveCfg = Release|Win32
+		{9D65248B-59BD-4C0E-B75F-A9F596FBF0D6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
