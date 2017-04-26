@@ -1,3 +1,5 @@
+#include <unistd.h>
+#include <fcntl.h>
 
 int 
 lock_reg(int fd, int cmd, int type, off_t offset, int whence, off_t len) {
@@ -8,5 +10,5 @@ lock_reg(int fd, int cmd, int type, off_t offset, int whence, off_t len) {
     lock.l_whence = whence;     /* SEEK_SET, SEEK_CUR, SEEK_END */ 
     lock.l_len = len;           /* #bytes (0 means to EOF) */
 
-    return (fcntl(fd, cmd, &lock))
+    return (fcntl(fd, cmd, &lock));
 }
