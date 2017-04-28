@@ -1,0 +1,3 @@
+the datagram socket is unreliable, but in the game design, it is used becuase of its advantage and disadvantage.
+
+
